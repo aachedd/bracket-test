@@ -1,0 +1,1133 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Office</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<div class="container text-center my-4">
+
+<p class="font-weight-bold">OFFICE TOP 64 EPISODES BRACKET</p>
+
+<style>
+  table, th, td {
+    border: 1px solid black;
+  }
+</style>
+
+<body>
+ <table style="width:100%">
+  <tr>
+    <th>West First</th>
+    <th>West Second</th>
+    <th>Regional Semi</th>
+    <th>Regional Final</th>
+    <th>National Semi</th>
+    <th>National Final</th>
+    <th>National Semi</th>
+    <th>Regional Final</th>
+    <th>Regional Semi</th>
+    <th>East Second</th>
+    <th>East First</th>
+  </tr>
+
+  <tr>
+    <td><input onclick="northWestSeed1()" type="button" value="" id="seed0"></input></td>
+    <td rowspan="2"><input onclick="northWestRd2a()"  type="button" value="" id="northWestRd2a"></input></td>
+    <td rowspan="4"><input onclick="northWestRd3a()"  type="button" value="" id="northWestRd3a"></input></td>
+    <td rowspan="8"><input onclick="northWestRd4a()"  type="button" value="" id="northWestRd4a"></input></td>
+    <td rowspan="16"><input onclick="northWestRd5()"  type="button" value="" id="northWestRd5"></input></td>
+    <td rowspan="32"><input onclick="westRd6()"  type="button" value="" id="westRd6"></input>
+                     <input onclick="eastRd6()"  type="button" value="" id="eastRd6"></input>
+                     <input onclick="winner()"  type="button" value="WINNER IS..." id="winner"></input></td>
+    <td rowspan="16"><input onclick="northEastRd5()"  type="button" value="" id="northEastRd5"></input></td>
+    <td rowspan="8"><input onclick="northEastRd4a()"  type="button" value="" id="northEastRd4a"></input></td>
+    <td rowspan="4"><input onclick="northEastRd3a()"  type="button" value="" id="northEastRd3a"></input></td>
+    <td rowspan="2"><input onclick="northEastRd2a()"  type="button" value="" id="northEastRd2a"></input></td>
+    <td ><input onclick="northEastSeed1()" type="button" value="" id="seed1"></input></td>
+  </tr>
+
+  <tr>
+    <td><input onclick="northWestSeed16()" type="button" value="" id="seed63"></input></td>
+    <td><input onclick="northEastSeed16()" type="button" value="" id="seed62"></input></td>
+  </tr>
+
+  <tr>
+    <td><input onclick="northWestSeed8()" type="button" value="" id="seed31"></input></td>
+    <td rowspan="2"><input onclick="northWestRd2b()"  type="button" value="" id="northWestRd2b"></input></td>
+    <td rowspan="2"><input onclick="northEastRd2b()"  type="button" value="" id="northEastRd2b"></input></td>
+    <td><input onclick="northEastSeed8()" type="button" value="" id="seed30"></input></td>
+  </tr>
+
+  <tr>
+    <td ><input onclick="northWestSeed9()" type="button" value="" id="seed32"></input></td>
+    <td ><input onclick="northEastSeed9()" type="button" value="" id="seed33"></input></td>
+  </tr>
+
+  <tr>
+    <td><input onclick="northWestSeed5()" type="button" value="" id="seed16"></input></td>
+    <td rowspan="2"><input onclick="northWestRd2c()"  type="button" value="" id="northWestRd2c"></input></td>
+    <td rowspan="4"><input onclick="northWestRd3b()"  type="button" value="" id="northWestRd3b"></input></td>
+    <td rowspan="4"><input onclick="northEastRd3b()"  type="button" value="" id="northEastRd3b"></input></td>
+    <td rowspan="2"><input onclick="northEastRd2c()"  type="button" value="" id="northEastRd2c"></input></td>
+    <td ><input onclick="northEastSeed5()" type="button" value="" id="seed17"></input></td>
+  </tr>
+
+  <tr>
+    <td><input onclick="northWestSeed12()" type="button" value="" id="seed47"></input></td>
+    <td><input onclick="northEastSeed12()" type="button" value="" id="seed46"></input></td>
+  </tr>
+
+  <tr>
+    <td><input onclick="northWestSeed4()" type="button" value="" id="seed15"></input></td>
+    <td rowspan="2"><input onclick="northWestRd2d()"  type="button" value="" id="northWestRd2d"></input></td>
+    <td rowspan="2"><input onclick="northEastRd2d()"  type="button" value="" id="northEastRd2d"></input></td>
+    <td><input onclick="northEastSeed4()" type="button" value="" id="seed14"></input></td>
+  </tr>
+
+  <tr>
+    <td ><input onclick="northWestSeed13()" type="button" value="" id="seed48"></input></td>
+    <td ><input onclick="northEastSeed13()" type="button" value="" id="seed49"></input></td>
+  </tr>
+
+  <tr>
+    <td><input onclick="northWestSeed6()" type="button" value="" id="seed23"></input></td>
+    <td rowspan="2"><input onclick="northWestRd2e()"  type="button" value="" id="northWestRd2e"></input></td>
+    <td rowspan="4"><input onclick="northWestRd3c()"  type="button" value="" id="northWestRd3c"></input></td>
+    <td rowspan="8"><input onclick="northWestRd4b()"  type="button" value="" id="northWestRd4b"></input></td>
+    <td rowspan="8"><input onclick="northEastRd4b()"  type="button" value="" id="northEastRd4b"></input></td>
+    <td rowspan="4"><input onclick="northEastRd3c()"  type="button" value="" id="northEastRd3c"></input></td>
+    <td rowspan="2"><input onclick="northEastRd2e()"  type="button" value="" id="northEastRd2e"></input></td>
+    <td ><input onclick="northEastSeed6()" type="button" value="" id="seed22"></input></td>
+  </tr>
+
+  <tr>
+    <td><input onclick="northWestSeed11()" type="button" value="" id="seed40"></input></td>
+    <td><input onclick="northEastSeed11()" type="button" value="" id="seed41"></input></td>
+  </tr>
+
+  <tr>
+    <td><input onclick="northWestSeed3()" type="button" value="" id="seed8"></input></td>
+    <td rowspan="2"><input onclick="northWestRd2f()"  type="button" value="" id="northWestRd2f"></input></td>
+    <td rowspan="2"><input onclick="northEastRd2f()"  type="button" value="" id="northEastRd2f"></input></td>
+    <td><input onclick="northEastSeed3()" type="button" value="" id="seed9"></input></td>
+  </tr>
+
+  <tr>
+    <td ><input onclick="northWestSeed14()" type="button" value="" id="seed55"></input></td>
+    <td ><input onclick="northEastSeed14()" type="button" value="" id="seed54"></input></td>
+  </tr>
+
+  <tr>
+    <td><input onclick="northWestSeed7()" type="button" value="" id="seed24"></input></td>
+    <td rowspan="2"><input onclick="northWestRd2g()"  type="button" value="" id="northWestRd2g"></input></td>
+    <td rowspan="4"><input onclick="northWestRd3d()"  type="button" value="" id="northWestRd3d"></input></td>
+    <td rowspan="4"><input onclick="northEastRd3d()"  type="button" value="" id="northEastRd3d"></input></td>
+    <td rowspan="2"><input onclick="northEastRd2g()"  type="button" value="" id="northEastRd2g"></input></td>
+    <td ><input onclick="northEastSeed7()" type="button" value="" id="seed25"></input></td>
+  </tr>
+
+  <tr>
+    <td><input onclick="northWestSeed10()" type="button" value="" id="seed39"></input></td>
+    <td><input onclick="northEastSeed10()" type="button" value="" id="seed38"></input></td>
+  </tr>
+
+  <tr>
+    <td><input onclick="northWestSeed2()" type="button" value="" id="seed7"></input></td>
+    <td rowspan="2"><input onclick="northWestRd2h()"  type="button" value="" id="northWestRd2h"></input></td>
+    <td rowspan="2"><input onclick="northEastRd2h()"  type="button" value="" id="northEastRd2h"></input></td>
+    <td><input onclick="northEastSeed2()" type="button" value="" id="seed6"></input></td>
+  </tr>
+
+  <tr>
+    <td ><input onclick="northWestSeed15()" type="button" value="" id="seed56"></input></td>
+    <td ><input onclick="northEastSeed15()" type="button" value="" id="seed57"></input></td>
+  </tr>
+
+  <tr>
+    <td><input onclick="southWestSeed1()" type="button" value="" id="seed3"></input></td>
+    <td rowspan="2"><input onclick="southWestRd2a()"  type="button" value="" id="southWestRd2a"></input></td>
+    <td rowspan="4"><input onclick="southWestRd3a()"  type="button" value="" id="southWestRd3a"></input></td>
+    <td rowspan="8"><input onclick="southWestRd4a()"  type="button" value="" id="southWestRd4a"></input></td>
+    <td rowspan="16"><input onclick="southWestRd5()"  type="button" value="" id="southWestRd5"></input></td>
+    <td rowspan="16"><input onclick="southEastRd5()"  type="button" value="" id="southEastRd5"></input></td>
+    <td rowspan="8"><input onclick="southEastRd4a()"  type="button" value="" id="southEastRd4a"></input></td>
+    <td rowspan="4"><input onclick="southEastRd3a()"  type="button" value="" id="southEastRd3a"></input></td>
+    <td rowspan="2"><input onclick="southEastRd2a()"  type="button" value="" id="southEastRd2a"></input></td>
+    <td ><input onclick="southEastSeed1()" type="button" value="" id="seed2"></input></td>
+  </tr>
+
+  <tr>
+    <td><input onclick="southWestSeed16()" type="button" value="" id="seed60"></input></td>
+    <td><input onclick="southEastSeed16()" type="button" value="" id="seed61"></input></td>
+  </tr>
+
+  <tr>
+    <td><input onclick="southWestSeed8()" type="button" value="" id="seed28"></input></td>
+    <td rowspan="2"><input onclick="southWestRd2b()"  type="button" value="" id="southWestRd2b"></input></td>
+    <td rowspan="2"><input onclick="southEastRd2b()"  type="button" value="" id="southEastRd2b"></input></td>
+    <td><input onclick="southEastSeed8()" type="button" value="" id="seed29"></input></td>
+  </tr>
+
+  <tr>
+    <td ><input onclick="southWestSeed9()" type="button" value="" id="seed35"></input></td>
+    <td ><input onclick="southEastSeed9()" type="button" value="" id="seed34"></input></td>
+  </tr>
+
+  <tr>
+    <td><input onclick="southWestSeed5()" type="button" value="" id="seed19"></input></td>
+    <td rowspan="2"><input onclick="southWestRd2c()"  type="button" value="" id="southWestRd2c"></input></td>
+    <td rowspan="4"><input onclick="southWestRd3b()"  type="button" value="" id="southWestRd3b"></input></td>
+    <td rowspan="4"><input onclick="southEastRd3b()"  type="button" value="" id="southEastRd3b"></input></td>
+    <td rowspan="2"><input onclick="southEastRd2c()"  type="button" value="" id="southEastRd2c"></input></td>
+    <td ><input onclick="southEastSeed5()" type="button" value="" id="seed18"></input></td>
+  </tr>
+
+  <tr>
+    <td><input onclick="southWestSeed12()" type="button" value="" id="seed44"></input></td>
+    <td><input onclick="southEastSeed12()" type="button" value="" id="seed45"></input></td>
+  </tr>
+
+  <tr>
+    <td><input onclick="southWestSeed4()" type="button" value="" id="seed12"></input></td>
+    <td rowspan="2"><input onclick="southWestRd2d()"  type="button" value="" id="southWestRd2d"></input></td>
+    <td rowspan="2"><input onclick="southEastRd2d()"  type="button" value="" id="southEastRd2d"></input></td>
+    <td><input onclick="southEastSeed4()" type="button" value="" id="seed13"></input></td>
+  </tr>
+
+  <tr>
+    <td ><input onclick="southWestSeed13()" type="button" value="" id="seed51"></input></td>
+    <td ><input onclick="southEastSeed13()" type="button" value="" id="seed50"></input></td>
+  </tr>
+
+  <tr>
+    <td><input onclick="southWestSeed6()" type="button" value="" id="seed20"></input></td>
+    <td rowspan="2"><input onclick="southWestRd2e()"  type="button" value="" id="southWestRd2e"></input></td>
+    <td rowspan="4"><input onclick="southWestRd3c()"  type="button" value="" id="southWestRd3c"></input></td>
+    <td rowspan="8"><input onclick="southWestRd4b()"  type="button" value="" id="southWestRd4b"></input></td>
+    <td rowspan="8"><input onclick="southEastRd4b()"  type="button" value="" id="southEastRd4b"></input></td>
+    <td rowspan="4"><input onclick="southEastRd3c()"  type="button" value="" id="southEastRd3c"></input></td>
+    <td rowspan="2"><input onclick="southEastRd2e()"  type="button" value="" id="southEastRd2e"></input></td>
+    <td ><input onclick="southEastSeed6()" type="button" value="" id="seed21"></input></td>
+  </tr>
+
+  <tr>
+    <td><input onclick="southWestSeed11()" type="button" value="" id="seed43"></input></td>
+    <td><input onclick="southEastSeed11()" type="button" value="" id="seed42"></input></td>
+  </tr>
+
+  <tr>
+    <td><input onclick="southWestSeed3()" type="button" value="" id="seed11"></input></td>
+    <td rowspan="2"><input onclick="southWestRd2f()"  type="button" value="" id="southWestRd2f"></input></td>
+    <td rowspan="2"><input onclick="southEastRd2f()"  type="button" value="" id="southEastRd2f"></input></td>
+    <td><input onclick="southEastSeed3()" type="button" value="" id="seed10"></input></td>
+  </tr>
+
+  <tr>
+    <td ><input onclick="southWestSeed14()" type="button" value="" id="seed52"></input></td>
+    <td ><input onclick="southEastSeed14()" type="button" value="" id="seed53"></input></td>
+  </tr>
+
+  <tr>
+    <td><input onclick="southWestSeed7()" type="button" value="" id="seed27"></input></td>
+    <td rowspan="2"><input onclick="southWestRd2g()"  type="button" value="" id="southWestRd2g"></input></td>
+    <td rowspan="4"><input onclick="southWestRd3d()"  type="button" value="" id="southWestRd3d"></input></td>
+    <td rowspan="4"><input onclick="southEastRd3d()"  type="button" value="" id="southEastRd3d"></input></td>
+    <td rowspan="2"><input onclick="southEastRd2g()"  type="button" value="" id="southEastRd2g"></input></td>
+    <td ><input onclick="southEastSeed7()" type="button" value="" id="seed26"></input></td>
+  </tr>
+
+  <tr>
+    <td><input onclick="southWestSeed10()" type="button" value="" id="seed36"></input></td>
+    <td><input onclick="southEastSeed10()" type="button" value="" id="seed37"></input></td>
+  </tr>
+
+  <tr>
+    <td><input onclick="southWestSeed2()" type="button" value="" id="seed4"></input></td>
+    <td rowspan="2"><input onclick="southWestRd2h()"  type="button" value="" id="southWestRd2h"></input></td>
+    <td rowspan="2"><input onclick="southEastRd2h()"  type="button" value="" id="southEastRd2h"></input></td>
+    <td><input onclick="southEastSeed2()" type="button" value="" id="seed5"></input></td>
+  </tr>
+
+  <tr>
+    <td ><input onclick="southWestSeed15()" type="button" value="" id="seed59"></input></td>
+    <td ><input onclick="southEastSeed15()" type="button" value="" id="seed58"></input></td>
+  </tr>
+
+</table> 
+</body>
+
+</div>
+
+  <script>
+    /*$.getJSON("https://spreadsheets.google.com/feeds/list/1t2_HHLkibAybPORmXuDDEFEyetC3p7r1blQRpjzinXg/od6/public/values?alt=json", function (data) {
+
+https://spreadsheets.google.com/feeds/cells/1YxRFsYqGt9OPMxXi5x2vECE3D9kQyF82wQIBW2jAZJc/1/public/full?alt=json
+https://mdbootstrap.com/snippets/jquery/ascensus/453950
+https://www.freecodecamp.org/news/cjn-google-sheets-as-json-endpoint/
+
+      var sheetData = data.feed.entry;
+
+      var i;
+      for (i = 0; i < sheetData.length; i++ ) {
+
+        var name = data.feed.entry[i]['gsx$_cn6ca']['$t'];
+
+
+        document.getElementById('demo').innerHTML + = ('<tr>'+ '<td>'+ name+ '</td>');
+
+      }
+      */
+
+    $.getJSON("https://spreadsheets.google.com/feeds/list/1YxRFsYqGt9OPMxXi5x2vECE3D9kQyF82wQIBW2jAZJc/1/public/full?alt=json", function (data) {
+
+      var sheetData = data.feed.entry;
+/*
+      var one = data.feed.entry[1]['gsx$_cn6ca']['$t'];
+      var two = data.feed.entry[2]['gsx$_cn6ca']['$t'];
+    
+    $("#southEastSeed15").val('57.'+ fiftyseven);
+    $("#southEastSeed16").val('64.'+ sixtyfour);
+*/
+
+      var i;
+      for (i = 0; i < 65; i++) {
+        var seed = data.feed.entry[i]['gsx$episode']['$t'];
+        $("#seed" + i).val(i+1+'. ' + seed);
+                                }
+
+    });
+
+//  first round northwest matchup
+    function northWestSeed1() 
+    {
+        var inputVal = document.getElementById("seed0").value;
+        document.getElementById("northWestRd2a").value= inputVal;
+      $("#northWestRd2a").val(inputVal);
+    }
+    function northWestSeed16() 
+    {
+        var inputVal = document.getElementById("seed63").value;
+        document.getElementById("northWestRd2a").value= inputVal;
+        $("#northWestRd2a").val(inputVal);
+    }
+    function northWestSeed8() 
+    {
+        var inputVal = document.getElementById("seed31").value;
+        document.getElementById("northWestRd2b").value= inputVal;
+        $("#northWestRd2b").val(inputVal);
+    }
+    function northWestSeed9() 
+    {
+        var inputVal = document.getElementById("seed32").value;
+        document.getElementById("northWestRd2b").value= inputVal;
+        $("#northWestRd2b").val(inputVal);
+    }
+    function northWestSeed5() 
+    {
+        var inputVal = document.getElementById("seed16").value;
+        document.getElementById("northWestRd2c").value= inputVal;
+      $("#northWestRd2c").val(inputVal);
+    }
+    function northWestSeed12() 
+    {
+        var inputVal = document.getElementById("seed47").value;
+        document.getElementById("northWestRd2c").value= inputVal;
+        $("#northWestRd2c").val(inputVal);
+    }
+    function northWestSeed4() 
+    {
+        var inputVal = document.getElementById("seed15").value;
+        document.getElementById("northWestRd2d").value= inputVal;
+        $("#northWestRd2d").val(inputVal);
+    }
+    function northWestSeed13() 
+    {
+        var inputVal = document.getElementById("seed48").value;
+        document.getElementById("northWestRd2d").value= inputVal;
+        $("#northWestRd2d").val(inputVal);
+    }
+    function northWestSeed6() 
+    {
+        var inputVal = document.getElementById("seed23").value;
+        document.getElementById("northWestRd2e").value= inputVal;
+      $("#northWestRd2e").val(inputVal);
+    }
+    function northWestSeed11() 
+    {
+        var inputVal = document.getElementById("seed40").value;
+        document.getElementById("northWestRd2e").value= inputVal;
+        $("#northWestRd2e").val(inputVal);
+    }
+    function northWestSeed3() 
+    {
+        var inputVal = document.getElementById("seed8").value;
+        document.getElementById("northWestRd2f").value= inputVal;
+        $("#northWestRd2f").val(inputVal);
+    }
+    function northWestSeed14() 
+    {
+        var inputVal = document.getElementById("seed55").value;
+        document.getElementById("northWestRd2f").value= inputVal;
+        $("#northWestRd2f").val(inputVal);
+    }
+    function northWestSeed7() 
+    {
+        var inputVal = document.getElementById("seed24").value;
+        document.getElementById("northWestRd2g").value= inputVal;
+      $("#northWestRd2g").val(inputVal);
+    }
+    function northWestSeed10() 
+    {
+        var inputVal = document.getElementById("seed39").value;
+        document.getElementById("northWestRd2g").value= inputVal;
+        $("#northWestRd2g").val(inputVal);
+    }
+    function northWestSeed2() 
+    {
+        var inputVal = document.getElementById("seed7").value;
+        document.getElementById("northWestRd2h").value= inputVal;
+        $("#northWestRd2h").val(inputVal);
+    }
+    function northWestSeed15() 
+    {
+        var inputVal = document.getElementById("seed56").value;
+        document.getElementById("northWestRd2h").value= inputVal;
+        $("#northWestRd2h").val(inputVal);
+    }
+
+// second round northwest matchup
+    function northWestRd2a() 
+    {
+        var inputVal = document.getElementById("northWestRd2a").value;
+        document.getElementById("northWestRd3a").value= inputVal;
+        $("#northWestRd3a").val(inputVal);
+    }
+    function northWestRd2b() 
+    {
+        var inputVal = document.getElementById("northWestRd2b").value;
+        document.getElementById("northWestRd3a").value= inputVal;
+        $("#northWestRd3a").val(inputVal);
+    }
+
+    function northWestRd2c() 
+    {
+        var inputVal = document.getElementById("northWestRd2c").value;
+        document.getElementById("northWestRd3b").value= inputVal;
+        $("#northWestRd3b").val(inputVal);
+    }
+    function northWestRd2d() 
+    {
+        var inputVal = document.getElementById("northWestRd2d").value;
+        document.getElementById("northWestRd3b").value= inputVal;
+        $("#northWestRd3b").val(inputVal);
+    }
+    function northWestRd2e() 
+    {
+        var inputVal = document.getElementById("northWestRd2e").value;
+        document.getElementById("northWestRd3c").value= inputVal;
+        $("#northWestRd3c").val(inputVal);
+    }
+    function northWestRd2f() 
+    {
+        var inputVal = document.getElementById("northWestRd2f").value;
+        document.getElementById("northWestRd3c").value= inputVal;
+        $("#northWestRd3c").val(inputVal);
+    }
+
+    function northWestRd2g() 
+    {
+        var inputVal = document.getElementById("northWestRd2g").value;
+        document.getElementById("northWestRd3d").value= inputVal;
+        $("#northWestRd3d").val(inputVal);
+    }
+    function northWestRd2h() 
+    {
+        var inputVal = document.getElementById("northWestRd2h").value;
+        document.getElementById("northWestRd3d").value= inputVal;
+        $("#northWestRd3d").val(inputVal);
+    }
+
+// third round northwest matchup
+    function northWestRd3a() 
+    {
+        var inputVal = document.getElementById("northWestRd3a").value;
+        document.getElementById("northWestRd4a").value= inputVal;
+        $("#northWestRd4a").val(inputVal);
+    }
+    function northWestRd3b() 
+    {
+        var inputVal = document.getElementById("northWestRd3b").value;
+        document.getElementById("northWestRd4a").value= inputVal;
+        $("#northWestRd4a").val(inputVal);
+    }
+    function northWestRd3c() 
+    {
+        var inputVal = document.getElementById("northWestRd3c").value;
+        document.getElementById("northWestRd4b").value= inputVal;
+        $("#northWestRd4b").val(inputVal);
+    }
+    function northWestRd3d() 
+    {
+        var inputVal = document.getElementById("northWestRd3d").value;
+        document.getElementById("northWestRd4b").value= inputVal;
+        $("#northWestRd4b").val(inputVal);
+    }
+
+// fourth round northwest matchup
+    function northWestRd4a() 
+    {
+        var inputVal = document.getElementById("northWestRd4a").value;
+        document.getElementById("northWestRd5").value= inputVal;
+        $("#northWestRd5").val(inputVal);
+    }
+    function northWestRd4b() 
+    {
+        var inputVal = document.getElementById("northWestRd4b").value;
+        document.getElementById("northWestRd5").value= inputVal;
+        $("#northWestRd5").val(inputVal);
+    }
+
+
+  // first round northeast matchup
+    function northEastSeed1() 
+    {
+        var inputVal = document.getElementById("seed1").value;
+        document.getElementById("northEastRd2a").value= inputVal;
+      $("#northEastRd2a").val(inputVal);
+    }
+    function northEastSeed16() 
+    {
+        var inputVal = document.getElementById("seed62").value;
+        document.getElementById("northEastRd2a").value= inputVal;
+        $("#northEastRd2a").val(inputVal);
+    }
+    function northEastSeed8() 
+    {
+        var inputVal = document.getElementById("seed30").value;
+        document.getElementById("northEastRd2b").value= inputVal;
+        $("#northEastRd2b").val(inputVal);
+    }
+    function northEastSeed9() 
+    {
+        var inputVal = document.getElementById("seed33").value;
+        document.getElementById("northEastRd2b").value= inputVal;
+        $("#northEastRd2b").val(inputVal);
+    }
+    function northEastSeed5() 
+    {
+        var inputVal = document.getElementById("seed17").value;
+        document.getElementById("northEastRd2c").value= inputVal;
+      $("#northEastRd2c").val(inputVal);
+    }
+    function northEastSeed12() 
+    {
+        var inputVal = document.getElementById("seed46").value;
+        document.getElementById("northEastRd2c").value= inputVal;
+        $("#northEastRd2c").val(inputVal);
+    }
+    function northEastSeed4() 
+    {
+        var inputVal = document.getElementById("seed14").value;
+        document.getElementById("northEastRd2d").value= inputVal;
+        $("#northEastRd2d").val(inputVal);
+    }
+    function northEastSeed13() 
+    {
+        var inputVal = document.getElementById("seed49").value;
+        document.getElementById("northEastRd2d").value= inputVal;
+        $("#northEastRd2d").val(inputVal);
+    }
+    function northEastSeed6() 
+    {
+        var inputVal = document.getElementById("seed22").value;
+        document.getElementById("northEastRd2e").value= inputVal;
+      $("#northEastRd2e").val(inputVal);
+    }
+    function northEastSeed11() 
+    {
+        var inputVal = document.getElementById("seed41").value;
+        document.getElementById("northEastRd2e").value= inputVal;
+        $("#northEastRd2e").val(inputVal);
+    }
+    function northEastSeed3() 
+    {
+        var inputVal = document.getElementById("seed9").value;
+        document.getElementById("northEastRd2f").value= inputVal;
+        $("#northEastRd2f").val(inputVal);
+    }
+    function northEastSeed14() 
+    {
+        var inputVal = document.getElementById("seed54").value;
+        document.getElementById("northEastRd2f").value= inputVal;
+        $("#northEastRd2f").val(inputVal);
+    }
+    function northEastSeed7() 
+    {
+        var inputVal = document.getElementById("seed25").value;
+        document.getElementById("northEastRd2g").value= inputVal;
+      $("#northEastRd2g").val(inputVal);
+    }
+    function northEastSeed10() 
+    {
+        var inputVal = document.getElementById("seed38").value;
+        document.getElementById("northEastRd2g").value= inputVal;
+        $("#northEastRd2g").val(inputVal);
+    }
+    function northEastSeed2() 
+    {
+        var inputVal = document.getElementById("seed6").value;
+        document.getElementById("northEastRd2h").value= inputVal;
+        $("#northEastRd2h").val(inputVal);
+    }
+    function northEastSeed15() 
+    {
+        var inputVal = document.getElementById("seed57").value;
+        document.getElementById("northEastRd2h").value= inputVal;
+        $("#northEastRd2h").val(inputVal);
+    }
+
+//  second round northeast matchup
+    function northEastRd2a() 
+    {
+        var inputVal = document.getElementById("northEastRd2a").value;
+        document.getElementById("northEastRd3a").value= inputVal;
+        $("#northEastRd3a").val(inputVal);
+    }
+    function northEastRd2b() 
+    {
+        var inputVal = document.getElementById("northEastRd2b").value;
+        document.getElementById("northEastRd3a").value= inputVal;
+        $("#northEastRd3a").val(inputVal);
+    }
+    function northEastRd2c() 
+    {
+        var inputVal = document.getElementById("northEastRd2c").value;
+        document.getElementById("northEastRd3b").value= inputVal;
+        $("#northEastRd3b").val(inputVal);
+    }
+    function northEastRd2d() 
+    {
+        var inputVal = document.getElementById("northEastRd2d").value;
+        document.getElementById("northEastRd3b").value= inputVal;
+        $("#northEastRd3b").val(inputVal);
+    }
+    function northEastRd2e() 
+    {
+        var inputVal = document.getElementById("northEastRd2e").value;
+        document.getElementById("northEastRd3c").value= inputVal;
+        $("#northEastRd3c").val(inputVal);
+    }
+    function northEastRd2f() 
+    {
+        var inputVal = document.getElementById("northEastRd2f").value;
+        document.getElementById("northEastRd3c").value= inputVal;
+        $("#northEastRd3c").val(inputVal);
+    }
+    function northEastRd2g() 
+    {
+        var inputVal = document.getElementById("northEastRd2g").value;
+        document.getElementById("northEastRd3d").value= inputVal;
+        $("#northEastRd3d").val(inputVal);
+    }
+    function northEastRd2h() 
+    {
+        var inputVal = document.getElementById("northEastRd2h").value;
+        document.getElementById("northEastRd3d").value= inputVal;
+        $("#northEastRd3d").val(inputVal);
+    }
+
+// third round northeast matchup
+    function northEastRd3a() 
+    {
+        var inputVal = document.getElementById("northEastRd3a").value;
+        document.getElementById("northEastRd4a").value= inputVal;
+        $("#northEastRd4a").val(inputVal);
+    }
+    function northEastRd3b() 
+    {
+        var inputVal = document.getElementById("northEastRd3b").value;
+        document.getElementById("northEastRd4a").value= inputVal;
+        $("#northEastRd4a").val(inputVal);
+    }
+    function northEastRd3c() 
+    {
+        var inputVal = document.getElementById("northEastRd3c").value;
+        document.getElementById("northEastRd4b").value= inputVal;
+        $("#northEastRd4b").val(inputVal);
+    }
+    function northEastRd3d() 
+    {
+        var inputVal = document.getElementById("northEastRd3d").value;
+        document.getElementById("northEastRd4b").value= inputVal;
+        $("#northEastRd4b").val(inputVal);
+    }
+
+// fourth round northeast matchup
+    function northEastRd4a() 
+    {
+        var inputVal = document.getElementById("northEastRd4a").value;
+        document.getElementById("northEastRd5").value= inputVal;
+        $("#northEastRd5").val(inputVal);
+    }
+    function northEastRd4b() 
+    {
+        var inputVal = document.getElementById("northEastRd4b").value;
+        document.getElementById("northEastRd5").value= inputVal;
+        $("#northEastRd5").val(inputVal);
+    }
+
+
+//  first round southwest matchup
+    function southWestSeed1() 
+    {
+        var inputVal = document.getElementById("seed3").value;
+        document.getElementById("southWestRd2a").value= inputVal;
+      $("#southWestRd2a").val(inputVal);
+    }
+    function southWestSeed16() 
+    {
+        var inputVal = document.getElementById("seed60").value;
+        document.getElementById("southWestRd2a").value= inputVal;
+        $("#southWestRd2a").val(inputVal);
+    }
+    function southWestSeed8() 
+    {
+        var inputVal = document.getElementById("seed28").value;
+        document.getElementById("southWestRd2b").value= inputVal;
+        $("#southWestRd2b").val(inputVal);
+    }
+    function southWestSeed9() 
+    {
+        var inputVal = document.getElementById("seed35").value;
+        document.getElementById("southWestRd2b").value= inputVal;
+        $("#southWestRd2b").val(inputVal);
+    }
+    function southWestSeed5() 
+    {
+        var inputVal = document.getElementById("seed19").value;
+        document.getElementById("southWestRd2c").value= inputVal;
+      $("#southWestRd2c").val(inputVal);
+    }
+    function southWestSeed12() 
+    {
+        var inputVal = document.getElementById("seed44").value;
+        document.getElementById("southWestRd2c").value= inputVal;
+        $("#southWestRd2c").val(inputVal);
+    }
+    function southWestSeed4() 
+    {
+        var inputVal = document.getElementById("seed12").value;
+        document.getElementById("southWestRd2d").value= inputVal;
+        $("#southWestRd2d").val(inputVal);
+    }
+    function southWestSeed13() 
+    {
+        var inputVal = document.getElementById("seed51").value;
+        document.getElementById("southWestRd2d").value= inputVal;
+        $("#southWestRd2d").val(inputVal);
+    }
+    function southWestSeed6() 
+    {
+        var inputVal = document.getElementById("seed20").value;
+        document.getElementById("southWestRd2e").value= inputVal;
+      $("#southWestRd2e").val(inputVal);
+    }
+    function southWestSeed11() 
+    {
+        var inputVal = document.getElementById("seed43").value;
+        document.getElementById("southWestRd2e").value= inputVal;
+        $("#southWestRd2e").val(inputVal);
+    }
+    function southWestSeed3() 
+    {
+        var inputVal = document.getElementById("seed11").value;
+        document.getElementById("southWestRd2f").value= inputVal;
+        $("#southWestRd2f").val(inputVal);
+    }
+    function southWestSeed14() 
+    {
+        var inputVal = document.getElementById("seed52").value;
+        document.getElementById("southWestRd2f").value= inputVal;
+        $("#southWestRd2f").val(inputVal);
+    }
+    function southWestSeed7() 
+    {
+        var inputVal = document.getElementById("seed27").value;
+        document.getElementById("southWestRd2g").value= inputVal;
+      $("#southWestRd2g").val(inputVal);
+    }
+    function southWestSeed10() 
+    {
+        var inputVal = document.getElementById("seed36").value;
+        document.getElementById("southWestRd2g").value= inputVal;
+        $("#southWestRd2g").val(inputVal);
+    }
+    function southWestSeed2() 
+    {
+        var inputVal = document.getElementById("seed4").value;
+        document.getElementById("southWestRd2h").value= inputVal;
+        $("#southWestRd2h").val(inputVal);
+    }
+    function southWestSeed15() 
+    {
+        var inputVal = document.getElementById("seed59").value;
+        document.getElementById("southWestRd2h").value= inputVal;
+        $("#southWestRd2h").val(inputVal);
+    }
+
+// second round southwest matchup
+    function southWestRd2a() 
+    {
+        var inputVal = document.getElementById("southWestRd2a").value;
+        document.getElementById("southWestRd3a").value= inputVal;
+        $("#southWestRd3a").val(inputVal);
+    }
+    function southWestRd2b() 
+    {
+        var inputVal = document.getElementById("southWestRd2b").value;
+        document.getElementById("southWestRd3a").value= inputVal;
+        $("#southWestRd3a").val(inputVal);
+    }
+    function southWestRd2c() 
+    {
+        var inputVal = document.getElementById("southWestRd2c").value;
+        document.getElementById("southWestRd3b").value= inputVal;
+        $("#southWestRd3b").val(inputVal);
+    }
+    function southWestRd2d() 
+    {
+        var inputVal = document.getElementById("southWestRd2d").value;
+        document.getElementById("southWestRd3b").value= inputVal;
+        $("#southWestRd3b").val(inputVal);
+    }
+    function southWestRd2e() 
+    {
+        var inputVal = document.getElementById("southWestRd2e").value;
+        document.getElementById("southWestRd3c").value= inputVal;
+        $("#southWestRd3c").val(inputVal);
+    }
+    function southWestRd2f() 
+    {
+        var inputVal = document.getElementById("southWestRd2f").value;
+        document.getElementById("southWestRd3c").value= inputVal;
+        $("#southWestRd3c").val(inputVal);
+    }
+    function southWestRd2g() 
+    {
+        var inputVal = document.getElementById("southWestRd2g").value;
+        document.getElementById("southWestRd3d").value= inputVal;
+        $("#southWestRd3d").val(inputVal);
+    }
+    function southWestRd2h() 
+    {
+        var inputVal = document.getElementById("southWestRd2h").value;
+        document.getElementById("southWestRd3d").value= inputVal;
+        $("#southWestRd3d").val(inputVal);
+    }
+
+// third round southwest matchup
+    function southWestRd3a() 
+    {
+        var inputVal = document.getElementById("southWestRd3a").value;
+        document.getElementById("southWestRd4a").value= inputVal;
+        $("#southWestRd4a").val(inputVal);
+    }
+    function southWestRd3b() 
+    {
+        var inputVal = document.getElementById("southWestRd3b").value;
+        document.getElementById("southWestRd4a").value= inputVal;
+        $("#southWestRd4a").val(inputVal);
+    }
+    function southWestRd3c() 
+    {
+        var inputVal = document.getElementById("southWestRd3c").value;
+        document.getElementById("southWestRd4b").value= inputVal;
+        $("#southWestRd4b").val(inputVal);
+    }
+    function southWestRd3d() 
+    {
+        var inputVal = document.getElementById("southWestRd3d").value;
+        document.getElementById("southWestRd4b").value= inputVal;
+        $("#southWestRd4b").val(inputVal);
+    }
+
+// fourth round southwest matchup
+    function southWestRd4a() 
+    {
+        var inputVal = document.getElementById("southWestRd4a").value;
+        document.getElementById("southWestRd5").value= inputVal;
+        $("#southWestRd5").val(inputVal);
+    }
+    function southWestRd4b() 
+    {
+        var inputVal = document.getElementById("southWestRd4b").value;
+        document.getElementById("southWestRd5").value= inputVal;
+        $("#southWestRd5").val(inputVal);
+    }
+
+
+  // first round southeast matchup
+    function southEastSeed1() 
+    {
+        var inputVal = document.getElementById("seed2").value;
+        document.getElementById("southEastRd2a").value= inputVal;
+      $("#southEastRd2a").val(inputVal);
+    }
+    function southEastSeed16() 
+    {
+        var inputVal = document.getElementById("seed61").value;
+        document.getElementById("southEastRd2a").value= inputVal;
+        $("#southEastRd2a").val(inputVal);
+    }
+    function southEastSeed8() 
+    {
+        var inputVal = document.getElementById("seed29").value;
+        document.getElementById("southEastRd2b").value= inputVal;
+        $("#southEastRd2b").val(inputVal);
+    }
+    function southEastSeed9() 
+    {
+        var inputVal = document.getElementById("seed34").value;
+        document.getElementById("southEastRd2b").value= inputVal;
+        $("#southEastRd2b").val(inputVal);
+    }
+    function southEastSeed5() 
+    {
+        var inputVal = document.getElementById("seed18").value;
+        document.getElementById("southEastRd2c").value= inputVal;
+      $("#southEastRd2c").val(inputVal);
+    }
+    function southEastSeed12() 
+    {
+        var inputVal = document.getElementById("seed45").value;
+        document.getElementById("southEastRd2c").value= inputVal;
+        $("#southEastRd2c").val(inputVal);
+    }
+    function southEastSeed4() 
+    {
+        var inputVal = document.getElementById("seed13").value;
+        document.getElementById("southEastRd2d").value= inputVal;
+        $("#southEastRd2d").val(inputVal);
+    }
+    function southEastSeed13() 
+    {
+        var inputVal = document.getElementById("seed50").value;
+        document.getElementById("southEastRd2d").value= inputVal;
+        $("#southEastRd2d").val(inputVal);
+    }
+    function southEastSeed6() 
+    {
+        var inputVal = document.getElementById("seed21").value;
+        document.getElementById("southEastRd2e").value= inputVal;
+      $("#southEastRd2e").val(inputVal);
+    }
+    function southEastSeed11() 
+    {
+        var inputVal = document.getElementById("seed42").value;
+        document.getElementById("southEastRd2e").value= inputVal;
+        $("#southEastRd2e").val(inputVal);
+    }
+    function southEastSeed3() 
+    {
+        var inputVal = document.getElementById("seed10").value;
+        document.getElementById("southEastRd2f").value= inputVal;
+        $("#southEastRd2f").val(inputVal);
+    }
+    function southEastSeed14() 
+    {
+        var inputVal = document.getElementById("seed53").value;
+        document.getElementById("southEastRd2f").value= inputVal;
+        $("#southEastRd2f").val(inputVal);
+    }
+    function southEastSeed7() 
+    {
+        var inputVal = document.getElementById("seed26").value;
+        document.getElementById("southEastRd2g").value= inputVal;
+      $("#southEastRd2g").val(inputVal);
+    }
+    function southEastSeed10() 
+    {
+        var inputVal = document.getElementById("seed37").value;
+        document.getElementById("southEastRd2g").value= inputVal;
+        $("#southEastRd2g").val(inputVal);
+    }
+    function southEastSeed2() 
+    {
+        var inputVal = document.getElementById("seed5").value;
+        document.getElementById("southEastRd2h").value= inputVal;
+        $("#southEastRd2h").val(inputVal);
+    }
+    function southEastSeed15() 
+    {
+        var inputVal = document.getElementById("seed58").value;
+        document.getElementById("southEastRd2h").value= inputVal;
+        $("#southEastRd2h").val(inputVal);
+    }
+
+//  second round southeast matchup
+    function southEastRd2a() 
+    {
+        var inputVal = document.getElementById("southEastRd2a").value;
+        document.getElementById("southEastRd3a").value= inputVal;
+        $("#southEastRd3a").val(inputVal);
+    }
+    function southEastRd2b() 
+    {
+        var inputVal = document.getElementById("southEastRd2b").value;
+        document.getElementById("southEastRd3a").value= inputVal;
+        $("#southEastRd3a").val(inputVal);
+    }
+    function southEastRd2c() 
+    {
+        var inputVal = document.getElementById("southEastRd2c").value;
+        document.getElementById("southEastRd3b").value= inputVal;
+        $("#southEastRd3b").val(inputVal);
+    }
+    function southEastRd2d() 
+    {
+        var inputVal = document.getElementById("southEastRd2d").value;
+        document.getElementById("southEastRd3b").value= inputVal;
+        $("#southEastRd3b").val(inputVal);
+    }
+    function southEastRd2e() 
+    {
+        var inputVal = document.getElementById("southEastRd2e").value;
+        document.getElementById("southEastRd3c").value= inputVal;
+        $("#southEastRd3c").val(inputVal);
+    }
+    function southEastRd2f() 
+    {
+        var inputVal = document.getElementById("southEastRd2f").value;
+        document.getElementById("southEastRd3c").value= inputVal;
+        $("#southEastRd3c").val(inputVal);
+    }
+    function southEastRd2g() 
+    {
+        var inputVal = document.getElementById("southEastRd2g").value;
+        document.getElementById("southEastRd3d").value= inputVal;
+        $("#southEastRd3d").val(inputVal);
+    }
+    function southEastRd2h() 
+    {
+        var inputVal = document.getElementById("southEastRd2h").value;
+        document.getElementById("southEastRd3d").value= inputVal;
+        $("#southEastRd3d").val(inputVal);
+    }
+
+// third round southeast matchup
+    function southEastRd3a() 
+    {
+        var inputVal = document.getElementById("southEastRd3a").value;
+        document.getElementById("southEastRd4a").value= inputVal;
+        $("#southEastRd4a").val(inputVal);
+    }
+    function southEastRd3b() 
+    {
+        var inputVal = document.getElementById("southEastRd3b").value;
+        document.getElementById("southEastRd4a").value= inputVal;
+        $("#southEastRd4a").val(inputVal);
+    }
+    function southEastRd3c() 
+    {
+        var inputVal = document.getElementById("southEastRd3c").value;
+        document.getElementById("southEastRd4b").value= inputVal;
+        $("#southEastRd4b").val(inputVal);
+    }
+    function southEastRd3d() 
+    {
+        var inputVal = document.getElementById("southEastRd3d").value;
+        document.getElementById("southEastRd4b").value= inputVal;
+        $("#southEastRd4b").val(inputVal);
+    }
+
+// fourth round southeast matchup
+    function southEastRd4a() 
+    {
+        var inputVal = document.getElementById("southEastRd4a").value;
+        document.getElementById("southEastRd5").value= inputVal;
+        $("#southEastRd5").val(inputVal);
+    }
+    function southEastRd4b() 
+    {
+        var inputVal = document.getElementById("southEastRd4b").value;
+        document.getElementById("southEastRd5").value= inputVal;
+        $("#southEastRd5").val(inputVal);
+    }
+
+
+//final round function
+    function northWestRd5() 
+    {
+        var inputVal = document.getElementById("northWestRd5").value;
+        document.getElementById("westRd6").value= inputVal;
+        $("#westRd6").val(inputVal);
+    }
+    function southWestRd5() 
+    {
+        var inputVal = document.getElementById("southWestRd5").value;
+        document.getElementById("westRd6").value= inputVal;
+        $("#westRd6").val(inputVal);
+    }
+    function northEastRd5() 
+    {
+        var inputVal = document.getElementById("northEastRd5").value;
+        document.getElementById("eastRd6").value= inputVal;
+        $("#eastRd6").val(inputVal);
+    }
+    function southEastRd5() 
+    {
+        var inputVal = document.getElementById("southEastRd5").value;
+        document.getElementById("eastRd6").value= inputVal;
+        $("#eastRd6").val(inputVal);
+    }
+
+
+//winner function
+    function westRd6() 
+    {
+        var inputVal = document.getElementById("westRd6").value;
+        document.getElementById("winner").value= inputVal;
+        $("#winner").val(inputVal);
+    }
+    function eastRd6() 
+    {
+        var inputVal = document.getElementById("eastRd6").value;
+        document.getElementById("winner").value= inputVal;
+        $("#winner").val(inputVal);
+    }
+
+    function winner() 
+    {
+        var winner = $("#winner").val();
+        alert('WINNNER IS '+ winner + '!!!!!!!')
+    }
+
+/*
+https://www.ncaa.com/sites/default/files/public/styles/original/public-s3/images/2019/06/27/2020-NCAA-bracket-March-Madness.jpg?itok=ZFsTQ3uO
+C:\Users\Andrew\Documents\office-bracket.html
+
+    $.getJSON("https://spreadsheets.google.com/feeds/list/1t2_HHLkibAybPORmXuDDEFEyetC3p7r1blQRpjzinXg/od6/public/values?alt=json", function (data) {
+
+      var sheetData = data.feed.entry;
+
+      var i;
+      for (i = 0; i < sheetData.length; i++) {
+
+        var name = data.feed.entry[i]['gsx$_cn6ca']['$t'];
+        var age = data.feed.entry[i]['gsx$_cokwr']['$t'];
+        var email = data.feed.entry[i]['gsx$_cpzh4']['$t'];
+
+        document.getElementById('demo').innerHTML += ('<tr>'+'<td>'+name+'</td>'+'<td>'+age+'</td>'+'<td>'+email+'</td>'+'</tr>');
+
+      }
+    });
+
+
+
+*/
+  </script>
+
